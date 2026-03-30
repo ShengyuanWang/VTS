@@ -48,7 +48,10 @@ public class GeminiRestProvider: BaseRestSTTProvider {
 
     private func sendTranscriptionRequest(audioData: Data, config: ProviderConfig) async throws -> String {
         let urlString = "\(baseURL)/\(config.model):generateContent?key=\(config.apiKey)"
-        var request = URLRequest(url: URL(string: urlString)!)
+        guard let url = URL(string: urlString) else {
+            throw STTError.networkError("Invalid URL for Gemini request: \(urlString)")
+        }
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
