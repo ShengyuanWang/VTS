@@ -70,7 +70,7 @@ public class BaseRestSTTProvider: RestSTTProvider {
                 lastError = error
                 let isRetryableError = isNetworkErrorRetryable(error)
                 
-                print("\(providerName): Attempt \(attempt) failed with error: \(error)")
+                print("\(providerName): Attempt \(attempt) failed with error: \(error.localizedDescription)")
                 
                 // Don't retry if it's not a network error or if this was the last attempt
                 if !isRetryableError || attempt == maxRetries {
