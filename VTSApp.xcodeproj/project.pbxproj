@@ -30,6 +30,7 @@
 		CA2836732E69563D00CA59D7 /* StreamingSTTProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2836712E69563D00CA59D7 /* StreamingSTTProvider.swift */; };
 		CA2836762E69564800CA59D7 /* StreamingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2836752E69564800CA59D7 /* StreamingModels.swift */; };
 		CA2836772E69564800CA59D7 /* RealtimeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2836742E69564800CA59D7 /* RealtimeSession.swift */; };
+		CA2836A02E69570000CA59D7 /* GeminiRestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2836A12E69570000CA59D7 /* GeminiRestProvider.swift */; };
 		CA4830A72E2B85730085EEF7 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4830A62E2B85700085EEF7 /* NotificationManager.swift */; };
 		CA4830AD2E2B859F0085EEF7 /* RetryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4830AC2E2B859C0085EEF7 /* RetryContext.swift */; };
 		CA5A13F92E3C5DA800C01C44 /* AutoScrollingTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A13F82E3C5DA800C01C44 /* AutoScrollingTextEditor.swift */; };
@@ -85,6 +86,7 @@
 		CA2836712E69563D00CA59D7 /* StreamingSTTProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingSTTProvider.swift; sourceTree = "<group>"; };
 		CA2836742E69564800CA59D7 /* RealtimeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeSession.swift; sourceTree = "<group>"; };
 		CA2836752E69564800CA59D7 /* StreamingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingModels.swift; sourceTree = "<group>"; };
+		CA2836A12E69570000CA59D7 /* GeminiRestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiRestProvider.swift; sourceTree = "<group>"; };
 		CA4830A62E2B85700085EEF7 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		CA4830AC2E2B859C0085EEF7 /* RetryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryContext.swift; sourceTree = "<group>"; };
 		CA5A13F82E3C5DA800C01C44 /* AutoScrollingTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollingTextEditor.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				CA2836662E69562A00CA59D7 /* DeepgramRestProvider.swift */,
 				CA2836672E69562A00CA59D7 /* GroqRestProvider.swift */,
 				CA2836682E69562A00CA59D7 /* OpenAIRestProvider.swift */,
+				CA2836A12E69570000CA59D7 /* GeminiRestProvider.swift */,
 				CA2836692E69562A00CA59D7 /* OpenAIStreamingProvider.swift */,
 			);
 			path = Providers;
@@ -391,6 +394,7 @@
 				CA28366D2E69562A00CA59D7 /* BaseStreamingSTTProvider.swift in Sources */,
 				CA28366E2E69562A00CA59D7 /* DeepgramRestProvider.swift in Sources */,
 				CA28366F2E69562A00CA59D7 /* OpenAIRestProvider.swift in Sources */,
+				CA2836A02E69570000CA59D7 /* GeminiRestProvider.swift in Sources */,
 				CA5A13F92E3C5DA800C01C44 /* AutoScrollingTextEditor.swift in Sources */,
 				CA2836602E69561900CA59D7 /* StreamingTranscriptionService.swift in Sources */,
 				CA2836722E69563D00CA59D7 /* RestSTTProvider.swift in Sources */,

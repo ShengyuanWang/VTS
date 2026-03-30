@@ -202,6 +202,8 @@ struct OnboardingAPIKeyStep: View {
             url = URL(string: "https://console.groq.com/keys")
         case .deepgram:
             url = URL(string: "https://console.deepgram.com/project/keys")
+        case .gemini:
+            url = URL(string: "https://aistudio.google.com/apikey")
         }
         
         if let url = url {
@@ -302,9 +304,11 @@ extension STTProviderType {
             return .orange
         case .deepgram:
             return .blue
+        case .gemini:
+            return .purple
         }
     }
-    
+
     var description: String {
         switch self {
         case .openai:
@@ -313,9 +317,11 @@ extension STTProviderType {
             return "Ultra-fast inference with competitive accuracy"
         case .deepgram:
             return "Advanced speech recognition with real-time processing"
+        case .gemini:
+            return "Google's multimodal AI with strong audio understanding"
         }
     }
-    
+
     var pricingInfo: String {
         switch self {
         case .openai:
@@ -324,9 +330,11 @@ extension STTProviderType {
             return "Free tier available, very cost-effective"
         case .deepgram:
             return "Pay-as-you-go, may start at $0.0059/minute"
+        case .gemini:
+            return "Free tier available; pay-as-you-go for high usage"
         }
     }
-    
+
     var speedInfo: String {
         switch self {
         case .openai:
@@ -335,9 +343,11 @@ extension STTProviderType {
             return "Lightning-fast processing, near real-time"
         case .deepgram:
             return "Real-time and batch processing capabilities"
+        case .gemini:
+            return "Fast processing with Google infrastructure"
         }
     }
-    
+
     var qualityInfo: String {
         switch self {
         case .openai:
@@ -346,6 +356,8 @@ extension STTProviderType {
             return "High accuracy with superior speed"
         case .deepgram:
             return "Enterprise-grade accuracy with multiple models"
+        case .gemini:
+            return "Top-ranked audio understanding and transcription"
         }
     }
 }

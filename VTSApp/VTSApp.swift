@@ -168,6 +168,8 @@ extension STTProviderType {
             return "bolt.fill"
         case .deepgram:
             return "waveform.circle.fill"
+        case .gemini:
+            return "sparkles"
         }
     }
 }
@@ -499,13 +501,15 @@ class AppState: ObservableObject {
             restTranscriptionService.setProvider(GroqRestProvider())
         case .deepgram:
             restTranscriptionService.setProvider(DeepgramRestProvider())
+        case .gemini:
+            restTranscriptionService.setProvider(GeminiRestProvider())
         }
-        
+
         // Set up streaming providers (only OpenAI supported for now)
         switch selectedProvider {
         case .openai:
             streamingTranscriptionService.setProvider(OpenAIStreamingProvider())
-        case .groq, .deepgram:
+        case .groq, .deepgram, .gemini:
             // Future support - no streaming providers available yet
             break
         }
